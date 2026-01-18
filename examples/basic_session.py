@@ -6,7 +6,7 @@ This example demonstrates how to create a duo peer programming session
 where Claude submits code and Codex reviews it.
 """
 
-from claude_codex_bridge import (
+from claude_codex_duo import (
     create_session,
     load_session,
     Verdict,

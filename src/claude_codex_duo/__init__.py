@@ -5,7 +5,7 @@ A simple library for peer programming between Claude Code and Codex.
 Claude codes, Codex reviews, until consensus is reached.
 
 Usage:
-    from claude_codex_bridge import DuoSession, create_session
+    from claude_codex_duo import DuoSession, create_session
 
     # Create a new session
     session = create_session("my_task", "Implement user login")

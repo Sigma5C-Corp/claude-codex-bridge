@@ -18,15 +18,15 @@ from typing import Optional
 
 
 def get_data_dir() -> Path:
-    """Get the bridge data directory.
+    """Get the duo data directory.
 
     Priority:
-    1. CLAUDE_CODEX_BRIDGE_DATA env var
-    2. ~/.claude-codex-bridge/
+    1. CLAUDE_CODEX_DUO_DATA env var
+    2. ~/.claude-codex-duo/
     """
-    if data_dir := os.environ.get("CLAUDE_CODEX_BRIDGE_DATA"):
+    if data_dir := os.environ.get("CLAUDE_CODEX_DUO_DATA"):
         return Path(data_dir)
-    return Path.home() / ".claude-codex-bridge"
+    return Path.home() / ".claude-codex-duo"
 
 
 @contextmanager

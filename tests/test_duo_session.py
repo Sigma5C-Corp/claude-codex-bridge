@@ -5,21 +5,21 @@ from pathlib import Path
 
 import pytest
 
-from claude_codex_bridge import (
+from claude_codex_duo import (
     DuoSession,
     create_session,
     load_session,
     SessionStatus,
     Verdict,
 )
-from claude_codex_bridge.message_bridge import get_data_dir
+from claude_codex_duo.message_bridge import get_data_dir
 
 
 @pytest.fixture
 def temp_data_dir(monkeypatch):
     """Set up a temporary data directory."""
     with tempfile.TemporaryDirectory() as tmpdir:
-        monkeypatch.setenv("CLAUDE_CODEX_BRIDGE_DATA", tmpdir)
+        monkeypatch.setenv("CLAUDE_CODEX_DUO_DATA", tmpdir)
         yield Path(tmpdir)
 
 

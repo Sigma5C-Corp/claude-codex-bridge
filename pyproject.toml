@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "claude-codex-bridge"
+name = "claude-codex-duo"
 version = "0.1.0"
 description = "Duo peer programming between Claude Code and Codex - two AIs are better than one"
 readme = "README.md"
@@ -35,10 +35,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Sigma5C/claude-codex-bridge"
-Documentation = "https://github.com/Sigma5C/claude-codex-bridge#readme"
-Repository = "https://github.com/Sigma5C/claude-codex-bridge"
-Issues = "https://github.com/Sigma5C/claude-codex-bridge/issues"
+Homepage = "https://github.com/Sigma5C-Corp/claude-codex-duo"
+Documentation = "https://github.com/Sigma5C-Corp/claude-codex-duo#readme"
+Repository = "https://github.com/Sigma5C-Corp/claude-codex-duo"
+Issues = "https://github.com/Sigma5C-Corp/claude-codex-duo/issues"
 
 [project.optional-dependencies]
 dev = [
@@ -57,7 +57,7 @@ include = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/claude_codex_bridge"]
+packages = ["src/claude_codex_duo"]
 
 [tool.ruff]
 line-length = 88

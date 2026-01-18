@@ -1,4 +1,4 @@
-# Claude-Codex Bridge
+# Claude-Codex Duo
 
 **Claude codes. Codex reviews. Better code together.**
 
@@ -25,21 +25,21 @@ Together, they create a peer programming experience that's greater than either a
 ### Installation
 
 ```bash
-pip install claude-codex-bridge
+pip install claude-codex-duo
 ```
 
 Or install from source:
 
 ```bash
-git clone https://github.com/Sigma5C/claude-codex-bridge
-cd claude-codex-bridge
+git clone https://github.com/Sigma5C-Corp/claude-codex-duo
+cd claude-codex-duo
 pip install -e .
 ```
 
 ### Basic Usage
 
 ```python
-from claude_codex_bridge import create_session, Verdict
+from claude_codex_duo import create_session, Verdict
 
 # Create a peer programming session
 session = create_session("auth_feature", "Implement user authentication")
@@ -141,14 +141,14 @@ session.current_round # Current review round number
 Set the data directory via environment variable:
 
 ```bash
-export CLAUDE_CODEX_BRIDGE_DATA=~/.my-bridge-data
+export CLAUDE_CODEX_DUO_DATA=~/.my-duo-data
 ```
 
-Default: `~/.claude-codex-bridge/`
+Default: `~/.claude-codex-duo/`
 
 Session files are stored in:
 ```
-~/.claude-codex-bridge/
+~/.claude-codex-duo/
 └── sessions/
     └── my_session/
         ├── session.json       # Session state
@@ -162,7 +162,7 @@ Session files are stored in:
 ### Manual Provider Control
 
 ```python
-from claude_codex_bridge import ClaudeProvider, CodexProvider
+from claude_codex_duo import ClaudeProvider, CodexProvider
 
 # Direct Claude interaction
 claude = ClaudeProvider(workspace="/my/project")
@@ -177,7 +177,7 @@ verdict = codex.extract_verdict(review)
 ### Load Existing Session
 
 ```python
-from claude_codex_bridge import load_session
+from claude_codex_duo import load_session
 
 session = load_session("my_session")
 print(f"Round {session.current_round} of {session.max_rounds}")

@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from claude_codex_bridge import MessageBridge, Message, MessageType
+from claude_codex_duo import MessageBridge, Message, MessageType
 
 
 @pytest.fixture
