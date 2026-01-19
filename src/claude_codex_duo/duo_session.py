@@ -9,10 +9,9 @@ import json
 from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
-from pathlib import Path
-from typing import Optional, Callable
+from typing import Optional
 
-from .message_bridge import MessageBridge, Message, MessageType, get_data_dir
+from .message_bridge import Message, MessageBridge, get_data_dir
 
 
 class SessionStatus(str, Enum):

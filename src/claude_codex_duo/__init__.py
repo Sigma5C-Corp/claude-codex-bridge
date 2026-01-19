@@ -24,15 +24,15 @@ __version__ = "0.1.0"
 
 from .duo_session import (
     DuoSession,
+    Exchange,
     SessionStatus,
     Verdict,
-    Exchange,
     create_session,
     load_session,
 )
 from .message_bridge import (
-    MessageBridge,
     Message,
+    MessageBridge,
     MessageType,
     get_data_dir,
 )

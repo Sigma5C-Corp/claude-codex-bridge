@@ -4,10 +4,9 @@ Claude Code CLI Provider
 Wrapper for interacting with the Claude Code CLI.
 """
 
-import subprocess
 import shutil
+import subprocess
 from pathlib import Path
-from typing import Optional
 
 
 class ClaudeProvider:

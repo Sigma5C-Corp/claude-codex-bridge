@@ -4,10 +4,9 @@ Codex CLI Provider
 Wrapper for interacting with the OpenAI Codex CLI.
 """
 
-import subprocess
 import shutil
+import subprocess
 from pathlib import Path
-from typing import Optional
 
 
 class CodexProvider:

@@ -7,12 +7,11 @@ import pytest
 
 from claude_codex_duo import (
     DuoSession,
-    create_session,
-    load_session,
     SessionStatus,
     Verdict,
+    create_session,
+    load_session,
 )
-from claude_codex_duo.message_bridge import get_data_dir
 
 
 @pytest.fixture
