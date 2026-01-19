@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "claude-codex-duo"
-version = "0.1.0"
+version = "0.1.1"
 description = "Duo peer programming between Claude Code and Codex - two AIs are better than one"
 readme = "README.md"
 license = "MIT"
