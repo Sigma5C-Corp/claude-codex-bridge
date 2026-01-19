@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Duo peer programming between Claude Code and Codex - two AIs are better than one"
 readme = "README.md"
 license = "MIT"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 authors = [
     { name = "Sigma5C", email = "dev@sigma5c.com" }
 ]
@@ -27,9 +27,9 @@ classifiers = [
     "Operating System :: POSIX :: Linux",
     "Operating System :: MacOS",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Software Development :: Code Generators",
     "Topic :: Software Development :: Quality Assurance",
 ]
@@ -61,7 +61,7 @@ packages = ["src/claude_codex_duo"]
 
 [tool.ruff]
 line-length = 88
-target-version = "py310"
+target-version = "py311"
 
 [tool.ruff.lint]
 select = [
@@ -77,7 +77,7 @@ ignore = [
 ]
 
 [tool.mypy]
-python_version = "3.10"
+python_version = "3.11"
 warn_return_any = true
 warn_unused_ignores = true
 disallow_untyped_defs = true
