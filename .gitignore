@@ -49,3 +49,4 @@ htmlcov/
 
 # Local development
 .claude-codex-bridge/
+.claude/
