@@ -1,0 +1,21 @@
+name: Security Scan
+on:
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 6 * * 1'
+permissions:
+  contents: read
+  security-events: write
+jobs:
+  secrets-scan:
+    name: Secrets Detection
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: TruffleHog scan
+        uses: trufflesecurity/trufflehog@main
+        with:
+          extra_args: --only-verified
