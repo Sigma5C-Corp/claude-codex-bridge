@@ -1,0 +1,14 @@
+title = "Sigma5C Secret Scanning Rules"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Sigma5C Allowlist"
+paths = [
+    '''^\.secrets\.baseline$''',
+    '''^\.env\.example$''',
+    '''^\.env\.template$''',
+    '''^node_modules/.*$''',
+    '''^__pycache__/.*$''',
+]
