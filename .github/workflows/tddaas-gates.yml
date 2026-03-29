@@ -1,0 +1,19 @@
+name: TDDaaS Quality Gates
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  quality:
+    uses: Sigma5C-Corp/Sigma5C_TDDaaS_Module/.github/workflows/tddaas-reusable.yml@main
+    with:
+      test-command: 'pytest tests/ --cov --cov-report=xml -q'
+      coverage-threshold: 50
+      lint-command: 'ruff check .'
+      run-secret-scan: true
+      run-dependency-scan: true
+      run-incident-link-check: true
+    secrets: inherit
