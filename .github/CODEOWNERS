@@ -1,5 +1,8 @@
-# Code Owners for claude-codex-duo
-# These users will be automatically requested for review on PRs
+# CODEOWNERS - claude-codex-duo
 
-# Default owners for everything in the repo
-* @Sigma5C-Corp
+*                          @Sigma5C-Corp/core-team
+SECURITY.md                @Sigma5C-Corp/security
+.github/                   @Sigma5C-Corp/devops
+src/                       @Sigma5C-Corp/architects
+tests/                     @Sigma5C-Corp/qa
+*.md                       @Sigma5C-Corp/core-team
